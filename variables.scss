@@ -1,0 +1,23 @@
+///////////////////////////////// Colors
+$__primary-color: hsl(26, 100%, 55%);
+$__secondary-color: hsl(25, 100%, 94%);
+
+$--hover-add-to-cart: hsl(26, 100%, 58%);
+$__border-color: rgb(225, 220, 220);
+$__Very-dark-blue: hsl(220, 13%, 13%);
+$__Dark-grayish-blue: hsl(219, 9%, 45%);
+$__Grayish-blue: hsl(220, 14%, 75%);
+$__Light-grayish-blue: hsl(223, 64%, 98%);
+$__White: hsl(0, 0%, 100%);
+$__Black: hsl(0, 0%, 0%); //(with 75% opacity for lightbox background)
+
+///////////////////////////////// Typography
+//Font size (paragraph): 16px
+//Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+//Weights: 400, 700
+
+@mixin centered-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

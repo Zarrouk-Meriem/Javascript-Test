@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="querries.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Kumbh+Sans:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo-items-container">
+        <a class="logo" href="#">
+          <ion-icon class="menu-icon hide-icon" name="menu-outline"></ion-icon
+          ><img src="/images/logo.svg"
+        /></a>
+        <div class="nav-items">
+          <a href="" class="nav-item">Collections</a>
+          <a href="" class="nav-item">Men</a>
+          <a href="" class="nav-item">Women</a>
+          <a href="" class="nav-item">About</a>
+          <a href="" class="nav-item">Contact</a>
+        </div>
+      </div>
+      <div class="contact-items">
+        <div class="chariot-icon-container">
+          <img
+            class="chariot-icon"
+            src="images/icon-cart.svg"
+            alt="purshase icon"
+          />
+          <span class="cart-item-number">0</span>
+          <div class="cart hidden">
+            <div class="cart-header">
+              <p>Cart</p>
+            </div>
+            <div class="cart-content">
+              <div class="purshased-items"></div>
+              <p class="empty-label">Your cart is empty.</p>
+              <button class="checkout-btn hidden">Checkout</button>
+            </div>
+          </div>
+        </div>
+        <img
+          class="profile-pic"
+          src="images/image-avatar.png"
+          alt="user picture"
+        />
+      </div>
+    </nav>
+    <div class="container">
+      <div class="img-box-container">
+        <div class="display-imgs">
+          <img
+            class="current-display-img display-img"
+            src="images/image-product-1.jpg"
+            alt="product picture"
+          />
+        </div>
+
+        <div class="forward-backward-icons hidden">
+          <ion-icon class="backward" name="chevron-back-outline"></ion-icon>
+          <ion-icon class="forward" name="chevron-forward-outline"></ion-icon>
+        </div>
+        <div class="thumbnail-imgs">
+          <img
+            class="thumbnail-img active-img"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnail-img"
+            src="images/image-product-2-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnail-img"
+            src="images/image-product-3-thumbnail.jpg"
+            alt=""
+          />
+          <img
+            class="thumbnail-img"
+            src="images/image-product-4-thumbnail.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="text-box-container">
+        <div class="header">
+          <h4 class="subheading">Sneaker Company</h4>
+          <h1 class="heading">Fall Limited Edition Sneakers</h1>
+        </div>
+        <div class="description">
+          <p class="text-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-text">
+            <div class="new-price">
+              <p class="price">$125.00</p>
+              <span class="discount">50%</span>
+            </div>
+            <p class="old-price">$250.00</p>
+          </div>
+          <div class="btns">
+            <div class="plus-minus-btns">
+              <button class="minus-btn">
+                <ion-icon
+                  class="icon minus-icon"
+                  name="remove-outline"
+                ></ion-icon>
+              </button>
+              <p class="counter">0</p>
+              <button class="plus-btn">
+                <ion-icon class="icon plus-icon" name="add-outline"></ion-icon>
+              </button>
+            </div>
+            <button class="btn add-to-cart-btn">
+              <img src="images/icon-cart.svg" alt="" /> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slider hidden">
+        <div class="bg"></div>
+        <div class="container__2">
+          <div class="display-imgs">
+            <img
+              class="display-img__2"
+              src="images/image-product-1.jpg"
+              alt="product picture"
+            />
+            <img
+              class="display-img__2"
+              src="images/image-product-2.jpg"
+              alt="product picture"
+            />
+            <img
+              class="display-img__2"
+              src="images/image-product-3.jpg"
+              alt="product picture"
+            />
+            <img
+              class="display-img__2"
+              src="images/image-product-4.jpg"
+              alt="product picture"
+            />
+          </div>
+          <div class="thumbnail-imgs__2">
+            <img
+              class="thumbnail-img__2 active-img"
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+              data-slide="0"
+            />
+            <img
+              class="thumbnail-img__2"
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+              data-slide="1"
+            />
+            <img
+              class="thumbnail-img__2"
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+              data-slide="2"
+            />
+            <img
+              class="thumbnail-img__2"
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+              data-slide="3"
+            />
+          </div>
+        </div>
+        <div class="forward-backward-ions__2">
+          <ion-icon class="left" name="chevron-back-outline"></ion-icon>
+          <ion-icon class="right" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <div class="menu-slide">
+      <ion-icon class="close-icon" name="close-outline"></ion-icon>
+      <div class="menu-items">
+        <a href="" class="menu-item">Collections</a>
+        <a href="" class="menu-item">Men</a>
+        <a href="" class="menu-item">Women</a>
+        <a href="" class="menu-item">About</a>
+        <a href="" class="menu-item">Contact</a>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
